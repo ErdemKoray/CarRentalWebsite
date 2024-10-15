@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhammed Emin\\Desktop\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite.csproj": {}
+    "/Users/korayerdem/Documents/GitHub/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhammed Emin\\Desktop\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite.csproj": {
+    "/Users/korayerdem/Documents/GitHub/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhammed Emin\\Desktop\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite.csproj",
+        "projectUniqueName": "/Users/korayerdem/Documents/GitHub/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite.csproj",
         "projectName": "CarRentalWebsite",
-        "projectPath": "C:\\Users\\Muhammed Emin\\Desktop\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite.csproj",
-        "packagesPath": "C:\\Users\\Muhammed Emin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhammed Emin\\Desktop\\CarRentalWebsite\\CarRentalWebsite\\CarRentalWebsite\\obj\\",
+        "projectPath": "/Users/korayerdem/Documents/GitHub/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite.csproj",
+        "packagesPath": "/Users/korayerdem/.nuget/packages/",
+        "outputPath": "/Users/korayerdem/Documents/GitHub/CarRentalWebsite/CarRentalWebsite/CarRentalWebsite/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Muhammed Emin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/korayerdem/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +44,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -70,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
