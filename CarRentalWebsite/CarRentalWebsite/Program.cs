@@ -1,6 +1,7 @@
 using CarRentalWebsite.Data;
 using CarRentalWebsite.Data.Abstract;
 using CarRentalWebsite.Data.Concrete;
+using CarRentalWebsite.Models;
 using CarRentalWebsite.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped(typeof(IBaseRepository<>) , typeof(BaseRepository<>));
 builder.Services.AddScoped<ICarRepository , CarRepository>();
+builder.Services.AddScoped<IReservationRepository , ReservationRepository>();
+builder.Services.AddScoped<IPaymentRepository , PaymentRepository>();
+builder.Services.AddScoped<IUserRepository , UserRepository>();
 
 builder.Services.AddDbContext<DataContext>(options => 
         options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
