@@ -1,3 +1,4 @@
+using CarRentalWebsite.Business;
 using CarRentalWebsite.Data;
 using CarRentalWebsite.Data.Abstract;
 using CarRentalWebsite.Data.Concrete;
@@ -14,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddScoped<ICarService,CarService>();
 builder.Services.AddScoped(typeof(IBaseRepository<>) , typeof(BaseRepository<>));
 builder.Services.AddScoped<ICarRepository , CarRepository>();
 builder.Services.AddScoped<IReservationRepository , ReservationRepository>();
