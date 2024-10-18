@@ -1,7 +1,6 @@
 namespace CarRentalWebsite.Models
 {
-    public class User{
-        public int Id { get; set; }
+    public class UserDto{
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
@@ -10,6 +9,5 @@ namespace CarRentalWebsite.Models
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-
-}   
+    }   
 }

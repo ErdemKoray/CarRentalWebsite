@@ -16,10 +16,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICarService,CarService>();
+builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped(typeof(IBaseRepository<>) , typeof(BaseRepository<>));
 builder.Services.AddScoped<ICarRepository , CarRepository>();
-builder.Services.AddScoped<IReservationRepository , ReservationRepository>();
-builder.Services.AddScoped<IPaymentRepository , PaymentRepository>();
 builder.Services.AddScoped<IUserRepository , UserRepository>();
 
 builder.Services.AddDbContext<DataContext>(options => 
